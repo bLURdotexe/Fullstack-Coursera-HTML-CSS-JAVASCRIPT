@@ -1,17 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-ES">
+<!-- Aqui empieza la pagina -->
+
 <head>
-  <meta charset="utf-8">
-  <title>Displaying Images</title>
+    <title>Person Portafolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-<h1>Don't be afraid to be &lt;than a 100% success:</h1>
-<p>
-  <img src="picture-with-quote.jpg" width="400" height="235" alt="Picture with a quote"> &quot;It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly, so that his place shall never be with those cold and timid souls who neither know victory nor defeat.&quot;
-</p>
-<p>
-<img src="https://i.imgur.com/Ob7tuZ7.png" width="640" height="480">
-</p>
-<p>Theodore Roosevelt 1910 &copy; Copyright</p>
+
+    <header style="background-color: black;">
+        <h1 style="color: rgb(255, 255, 255); padding: 20px;">Portafolio de esta persona</h1>
+        <nav style="background-color: rgb(130, 130, 130); padding: 10px;">
+            <a href="#acerca" style="color: white;">Sobre mi</a> |
+            <a href="#habilidades" style="color: white;">Mis habilidades</a> |
+            <a href="#proyectos" style="color: white;">Proyectos relevantes</a> |
+            <a href="#contacto" style="color: white;">Contacto</a> 
+        </nav>
+    </header>
+
+    <main style="padding: 30px;">
+        <section id="acerca">
+            <h2>Acerca de mi</h2>
+            <p>
+                Me dedico a la creación de proyectos para ingeniería incluyendo apartados desde la eléctronica
+                de sistemas embebidos, desarrollo web, analisis de datos, programación e <abbr
+                title="Inteligencia Artificial">IA</abbr>.
+                <br>
+            </p>
+            <figure>
+                <img src="https://avatars.githubusercontent.com/u/240059979?s=96&v=4" width="100"
+                alt="imagen de perfil de github">
+                <figcaption>Figura 1. Foto de perfil de github</figcaption>
+            </figure>
+            <p>
+            <br>
+            <em><mark><strong>Soluciones para todos los emprendedores que quieran estar a la vanguardia de las nuevas jaja si andale si
+                 tecnologías. </strong></mark></em>
+            </p>
+
+        </section>
+
+
+        <section id="habilidades">
+            <h2>Mis habilidades</h2>
+            <ul>
+                <li>Lenguajes de programación
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C/C++</li>
+                    </ul>
+                </li>
+                <li>Herramientas de programación
+                    <ul>
+                        <li>Vscode</li>
+                        <li>InteliJ</li>
+                        <li>Proximamente cursor</li>
+                    </ul>
+                </li>
+                <li>Electronica Analogica/Digital</li>
+            </ul>
+                <p>Mi ruta de aprendizaje</p>
+                <ol type="I">
+                    <li>Web Development</li>
+                    <li>Analisis de datos</li>
+                    <li>Sistemas domoticos</li>
+                    <li>Sistemas roboticos</li>
+                    <li>Control de motores de Potencia</li>
+                    <li>Sistemas PLC</li>
+                </ol>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos relevantes</h2>
+            <table style="border-style: solid; border: 1px solid black;">
+                    <caption>Tabla de proyectos</caption>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Tecnologia</th>
+                    <th>Año</th>
+                </tr>
+                <tr>
+                    <td>Control de abanico con asistente virtual</td>
+                    <td>Micro controlador ESP32/Amazon Alexa</td>
+                    <td>2025</td>
+                </tr>
+                <tr>
+                    <td>Programa para creacion de portadas automatico</td>
+                    <td>Python/Flask/HTML</td>
+                    <td>2026</td>
+                </tr>
+                <tr>
+                    <td>Sistema de calendario y horario virtual multiplataforma</td>
+                    <td>Python/Flask/HTML/ESP32/ESPHOME/Servidor Linux/</td>
+                    <td>2026-2027</td>
+                </tr>
+
+
+            </table>
+        </section>
+
+        <section>
+            <video width="320" height="240" controls>
+                <source src="trollface.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <iframe 
+            width="300" 
+            height="300" 
+            src="https://www.youtube.com/embed/8ZEgML4sg-4?si=ej-zNjJA6anuHrg8" 
+            title="Reproducto de video" 
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+            </iframe>
+             
+            <br><audio src="alexzavesa-calm-elegant-logo-519008.mp3" controls></audio>
+        </section>
+
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form  method="get">
+                <fieldset style="border-color: black;">
+                    <legend>Información personal</legend>
+                    Nombre:
+                    <input type="text" name="nombre" required><br>
+                    Email:
+                    <input type="email" name="email" required><br>
+                    Telefono:
+                    <input type="tel" name="telefono"><br>
+                    Nota:<br>
+                    <textarea name="message" maxlength="100" rows="5" cols="20">Texto chido</textarea><br>
+                    Ubicacion:
+                    <select id="cont" name="Continente">
+                        <option value="" disabled selected>Elija un continente</option>
+                        <option value="america">America</option>
+                        <option value="asia">Asia</option>
+                        <option value="oce">Oceania</option>
+                        <option value="afr">Africa</option>
+                    </select>
+                    <br><input type="submit">
+
+                </fieldset>
+            </form>
+            <q>La duda es lo que nos arraiga a la razón</q>
+            <blockquote cite="https://biografiasyvidas.com">
+                <p>En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo
+                    de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.</p>
+            </blockquote>
+        </section>
+    </main>
+
+    <!-- Este es el pie de pagina chistoso-->
+    <footer>
+        <address>
+            &copy; Fortnite <br>
+            Información de contacto en <a href="mailto:fortnite@battleroyale.com">fortnite@battleroyale.com</a>.<br>
+            O llamandonos al <a href="tel:+1234567890">+1 234567890</a>.<br>
+            Visitanos en Oficina central en: Av. blablablabl 1233523443, Ascapotzalco, Mexico.
+        </address>
+    </footer>
+
 </body>
+
 </html>
